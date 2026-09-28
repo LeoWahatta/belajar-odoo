@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Form & Tree View -->
+    <record id="view_crud_form" model="ir.ui.view">
+        <field name="name">crud.form</field>
+        <field name="model">crud</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="entah" placeholder="mbuh"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action & Menu -->
+    <record id="action_CRUD" model="ir.actions.act_window">
+        <field name="name">CRUD Data</field>
+        <field name="res_model">crud</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="CRUD_root" name="CRUD App">
+        <menuitem id="CRUD_menu" name="Data List" action="action_CRUD"/>
+    </menuitem>
+
+</odoo>
