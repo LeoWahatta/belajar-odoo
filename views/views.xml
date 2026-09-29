@@ -22,6 +22,14 @@
         <field name="name">CRUD Data</field>
         <field name="res_model">crud</field>
         <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                gak enek opo opo blass rek
+            </p>
+            <p>
+                Klik tombol <strong>New</strong> suka suka kau mau di isi apa
+            </p>
+        </field>
     </record>
 
     <menuitem id="CRUD_root" name="CRUD App">
